@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import './App.css';
 import Customer from './components/Customer';
+import Table from '@mui/material';
+import TableHead from '@mui/material';
+import TableBody from '@mui/material';
+import TableRow from '@mui/material';
+import TableCell from '@mui/material';
 
 const customers = [
   {
@@ -32,23 +37,9 @@ class App extends Component {
   render() {
     return(
       <div>
-        {
-          customers.map(c => {
-            return(
-              <Customer
-              key={c.id}
-              id={c.id}
-              img={c.img}
-              name={c.name}
-              brithday={c.brithday}
-              job={c.job}
-              />
-            )
-          })
-        }
+        {customers.map(c => {  return  ( <Customer key={c.id}  id={c.id} img={c.img} name={c.name} brithday={c.brithday} job={c.job}/>  ) })  }
       </div>
-
-    );
+          );
     }
 
 }
