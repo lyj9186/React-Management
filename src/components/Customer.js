@@ -1,6 +1,6 @@
 import React from 'react';
-import TableRow from '@mui/material';
-import TableCell from '@mui/material';
+import TableRow from '@mui/material/TableRow';
+import TableCell from '@mui/material/TableCell';
 
 
 class Customer extends React.Component {
